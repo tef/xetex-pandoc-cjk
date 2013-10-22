@@ -11,5 +11,5 @@ $(PANDOC_TEMPLATE):
 	patch $(PANDOC_TEMPLATE) pandoc.template.diff
 	
 clean:
-	rm -f demo.md $(PANDOC_TEMPLATE)
+	rm -f demo.pdf $(PANDOC_TEMPLATE)
 
