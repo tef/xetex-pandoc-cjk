@@ -1,0 +1,13 @@
+--- pandoc.template.tex	2013-10-22 17:07:43.000000000 +0100
++++ pandoc.template2.tex	2013-10-22 17:08:14.000000000 +0100
+@@ -74,6 +74,10 @@
+ \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
+ $endif$
+ \ifxetex
++  \usepackage{fontspec,xltxtra,xunicode,xeCJK}
++  \setCJKmainfont{IPAexMincho}
++  \setCJKsansfont{IPAexGothic}
++  \setCJKmonofont{IPAexGothic}
+   \usepackage[setpagesize=false, % page size defined by xetex
+               unicode=false, % unicode breaks when used with xetex
+               xetex]{hyperref}
